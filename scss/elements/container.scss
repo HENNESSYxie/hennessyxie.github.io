@@ -1,0 +1,24 @@
+.container {
+    position: relative;
+    max-width: $container-width-lg;
+    margin: 0 auto;
+
+    @include lg-down {
+        max-width: $container-width-md;
+    }
+
+    @include md-down {
+        max-width: $container-width-sm;
+    }
+
+    @include sm-down {
+        max-width: 100%;
+    }
+}
+
+.section {
+    @include sm-down {
+        padding-right: 15px;
+        padding-left: 15px;
+    }   
+}

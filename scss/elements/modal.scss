@@ -1,0 +1,163 @@
+.modal {
+  display: none;
+  width: 100%;
+  height: 100%;
+  overflow: hidden;
+  background: rgba(41, 41, 41, 0.6);
+
+  position: fixed;
+  top: 0;
+  left: 0;
+  z-index: 1050;
+
+  color: #000000;
+
+  &__wrapper {
+    width: 900px;
+    margin: 135px auto;
+
+    @include lg-down {
+      max-width: 630px;
+    }
+
+    @include md-down {
+      max-width: 240px;
+    }
+  }
+
+  &__inner {
+    display: flex;
+    gap: 30px;
+    background-color: #fff;
+    border-radius: 9px;
+
+    position: relative;
+
+    @include lg-down {
+      gap: 11px; 
+    }
+  }
+
+  &__img {
+    width: 500px;
+    height: 500px;
+    border-radius: 9px;
+
+    @include lg-down {
+      max-width: 350px;
+      max-height: 350px;
+    }
+
+    @include md-down {
+      display: none;
+    }
+  }
+
+  &__content {
+    padding-top: 50px;
+    padding-right: 20px;
+
+    @include lg-down {
+      padding-top: 10px;
+      padding-right: 9px; 
+    }
+
+    @include md-down {
+      padding: 10px; 
+    }
+  }
+
+  &__title {
+    letter-spacing: 2px;
+    margin-bottom: 10px;
+
+    @include md-down {
+      text-align: center; 
+    }
+  }
+
+  &__subtitle {
+    letter-spacing: -0.4px;
+    font-weight: 400;
+    margin-bottom: 40px;
+
+    @include lg-down {
+      margin-bottom: 20px; 
+    }
+
+    @include md-down {
+      text-align: center; 
+    }
+  }
+
+  &__text {
+    font-size: $font-size-sm;
+    line-height: 16.5px;
+    letter-spacing: 1px;
+    margin-bottom: 45px;
+
+    @include lg-down {
+      font-size: 13px;
+      line-height: 14px;
+      letter-spacing: 0.059em;
+      margin-bottom: 20px;
+    }
+
+    @include md-down {
+      text-align: justify;
+      letter-spacing: 0.05em;
+    } 
+  }
+
+  &__list {
+    list-style: inside;
+
+    &-item {
+      font-size: $font-size-sm;
+      line-height: 16.5px;
+      letter-spacing: 1px;
+      margin-bottom: 10px;
+      
+      &::marker {
+        margin-right: 5px;
+        color: $color-primary;
+      }
+      
+      @include lg-down {
+        margin-bottom: 6px;
+      }   
+
+      @include md-down {
+        line-height: 17px;
+      }
+    }
+  }
+
+  &__close {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    width: 52px;
+    height: 52px;
+    border-radius: 50%;
+    border: 2px solid #F1CDB3;
+    vertical-align: middle;
+    cursor: pointer;
+
+    position: absolute;
+    right: -42px;
+    top: -52px;
+
+    transition: border .2s linear, background-color .2s linear;
+
+    &:hover {
+      border: 2px solid $color-primary-light;
+      background-color: $color-primary-light;
+    }
+
+    @include md-down {
+      right: -30px;
+    }
+  }
+}

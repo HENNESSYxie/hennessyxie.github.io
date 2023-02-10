@@ -1,0 +1,21 @@
+@mixin lg-down {
+    // 1279.98 - 768
+    @media only screen and (max-width: $breakpoint-lg-down) {
+      @content;
+    }
+  }
+  
+  @mixin md-down {
+    // 767.98 - 414
+    @media only screen and (max-width: $breakpoint-md-down) {
+      @content;
+    }
+  }
+  
+  @mixin sm-down {
+    // 319.98 
+    @media only screen and (max-width: $breakpoint-sm-down) {
+      @content;
+    }
+  }
+  

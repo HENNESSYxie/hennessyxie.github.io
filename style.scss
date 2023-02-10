@@ -1,0 +1,42 @@
+@import "scss/variables.scss";
+
+@import "scss/vendor/normalize.scss";
+
+@import "scss/global.scss";
+@import "scss/mixins/media-queries.scss";
+@import "scss/elements/container.scss";
+@import "scss/elements/button.scss";
+@import "scss/elements/title.scss";
+@import "scss/elements/modal.scss";
+@import "scss/elements/burger.scss";
+
+// Sections
+
+@import "scss/sections/header.scss";
+@import "scss/sections/hero.scss";
+@import "scss/sections/about.scss";
+@import "scss/sections/pets.scss";
+@import "scss/sections/help.scss";
+@import "scss/sections/donation.scss";
+@import "scss/sections/footer.scss";
+
+@import "scss/show.scss";
+
+@font-face {
+    // название шрифта(чтобы не запутаться лучше указать название папки со шрифтом) 
+    font-family: "Arial"; 
+    // адрес шрифта и тип 
+    src: url("assets/fonts/arial.ttf") format("truetype"); 
+    font-style: normal; 
+    font-weight: normal; 
+    } 
+
+@font-face {
+    // название шрифта(чтобы не запутаться лучше указать название папки со шрифтом) 
+    font-family: "Georgia"; 
+    // адрес шрифта и тип 
+    src: url("assets/fonts/georgia.ttf") format("truetype"); 
+    font-style: normal; 
+    font-weight: normal; 
+    } 
+

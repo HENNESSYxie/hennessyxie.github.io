@@ -1,0 +1,39 @@
+// Colors
+$color-primary: #F1CDB3;
+$color-primary-light: #FDDCC4;
+$color-dark-s: #CDCDCD;
+$color-dark-l: #545454;
+$color-dark-xl: #4C4C4C;
+$color-dark-3xl: #292929;
+$color-dark-m: #B2B2B2;
+$color-light-xl: #FFFFFF;
+$color-light-s: #FAFAFA;
+
+
+// Fonts
+$font-family-primary: 'Georgia', sans-serif;
+$font-family-seconadry: 'Arial', sans-serif;
+
+$font-size-base: 20px;
+$line-height-base: 23px;
+
+$font-size-sm: 15px;
+$line-height-sm: 24px;
+
+$font-size-xs: 12px;
+$line-height-xs: 18px;
+
+
+
+// Container
+$container-width-lg: 1200px;
+$container-width-md: 984px;
+$container-width-sm: 728px;
+
+
+
+// Breakpoints
+// We minus 0.02px from our breakpoints because these breakpoints are for mobile-first but we use desktop-first approach
+$breakpoint-lg-down: 1280 - 0.02px;
+$breakpoint-md-down: 768px - 0.02px;
+$breakpoint-sm-down: 320px - 0.02px;

@@ -1,0 +1,31 @@
+.button {
+  display: inline-block;
+  padding: 15px 43px;
+  border-radius: 100px;
+  background-color: $color-primary;
+  color: $color-dark-3xl;
+  outline: none;
+  border: none;
+  cursor: pointer;
+  transition: background-color .2s ease-in-out;
+
+  &:hover {
+      background-color: $color-primary-light;
+  }
+
+  &__trans {
+    padding: 12px 40px;
+    background-color: transparent;
+    border: 2px solid #F1CDB3;
+    font-size: 17px;
+    line-height: 22.1px;
+    letter-spacing: 1px;
+
+    transition: background-color .2s linear, border .2s linear;
+
+    &:hover {
+      background-color: $color-primary-light;
+      border: 2px solid $color-primary-light;
+    }
+  }
+}

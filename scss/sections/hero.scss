@@ -1,0 +1,76 @@
+.hero {
+  background: url("assets/images/hero/noise_transparent@2X.png"),
+  
+   radial-gradient(100% 215.42% at 0% 0%, #5B483A 0%, #262425 100%), #211F20;
+
+  &__inner {
+    display: flex;
+    justify-content: space-between;
+
+    @include lg-down {
+      flex-direction: column;
+      align-items: center;
+
+      img {
+        max-width: 569px;
+        margin-right: -140px;
+      }
+    }
+
+    @include md-down {
+
+      img {
+        max-width: 260px;
+        margin-right: -40px;
+      }
+    }
+  }
+
+  &__content {
+    padding-top: 165px;
+    max-width: 460px;
+    min-height: 322px;
+
+    @include lg-down {
+      padding-top: 0;
+      margin-bottom: 100px;
+    }
+    @include md-down {
+      text-align: center;
+      max-width: 300px;
+      margin-bottom: 80px;
+    }
+  }
+
+  &__title {
+    margin-bottom: 39px;
+    font-size: 44px;
+    line-height: 57.2px;
+    max-width: 310px;
+    color: $color-light-xl;
+
+    @include md-down {
+      font-size: 25px;
+      line-height: 32.5px;
+      max-width: 230px;
+      margin: 0 auto 39px;
+      letter-spacing: 1.5px;
+    }
+  }
+
+  &__text {
+    font-family: $font-family-seconadry;
+    margin-bottom: 42px;
+    font-size: $font-size-sm;
+    line-height: $line-height-sm;
+    color: $color-dark-s;
+  }
+
+  &__button {
+    width: 209px;
+    @include lg-down {
+      display: block;
+      margin: 0 auto;
+    }
+  }
+}

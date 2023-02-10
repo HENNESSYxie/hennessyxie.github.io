@@ -1,0 +1,86 @@
+.help {
+
+  padding: 80px 0 100px;
+
+  @include md-down {
+    padding-top: 42px;
+    padding-bottom: 42px;
+  }
+  
+  &__inner {
+    text-align: center;
+  }
+
+  &__title {
+    margin-bottom: 60px;
+    letter-spacing: 2px;
+
+    @include md-down {
+      max-width: 300px;
+      font-size: 25px;
+      line-height: 32.5px;
+      letter-spacing: 1.5px;
+      margin: 0 auto 42px;
+    }
+  }
+
+  &__list {
+    display: flex;
+    justify-content: center;
+    align-self: center;
+    column-gap: 120px;
+    row-gap: 55px;
+    flex-wrap: wrap;
+    list-style-type: none;
+
+    @include lg-down {
+      display: grid;
+      grid-template-columns: repeat(3, 1fr);
+      column-gap: 60px;
+      max-width: 630px;
+      margin: 0 auto;
+    }
+
+    @include md-down {
+      grid-template-columns: repeat(2, 1fr);
+      row-gap: 30px;
+      max-width: 290px;
+      column-gap: 30px;
+    }
+  }
+
+  &__list-item {
+    text-align: center;
+    
+    &:last-child {
+      margin-right: 0;
+    }
+
+    & > img {
+      display: block;
+      margin: 0 auto 30px;
+      height: 60px;
+      width: 60px;
+
+      @include md-down {
+        width: 50px;
+        height: 50px;
+        margin-bottom: 20px;
+      }
+    }
+
+    & > h4 {
+      margin-top: 0;
+      margin-bottom: 0;
+      font-size: $font-size-base;
+      line-height: $line-height-base;
+      font-weight: 400;
+      letter-spacing: 1px;
+
+      @include md-down {
+        font-size: $font-size-sm;
+        line-height: 16.5px;
+      }
+    }
+  }
+}

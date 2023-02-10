@@ -1,0 +1,120 @@
+.donation {
+  padding: 80px 0 100px;
+  background:#F6F6F6;
+
+  @include md-down {
+    padding: 42px 0;
+  }
+
+  &__inner {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+    @include lg-down {
+      flex-direction: column;
+      row-gap: 57px;
+    }
+
+    @include md-down {
+      row-gap: 42px;
+    }
+  }
+
+  &__img {
+    width: 505px;
+    height: 261px;  
+    margin-right: 30px;
+
+    @include lg-down {
+      order: 2;
+      margin-right: 0;
+    }
+
+    @include md-down {
+      max-width: 260px;
+      max-height: 135.2px;
+    } 
+  }
+
+  &__content {
+    max-width: 380px;
+
+    @include lg-down {
+      order: 1;
+    }
+
+    @include md-down {
+      max-width: 300px; 
+    }
+  }
+
+  &__title {
+    max-width: 300px;
+    letter-spacing: 2px;
+    margin-bottom: 15px;
+
+    @include md-down {
+      max-width: 220px;
+      font-size: 25px;
+      line-height: 32.5px;
+      letter-spacing: 1.5px;
+      margin: 0 auto 20px;
+      text-align: center;
+    }
+  }
+
+  &__subtitle {
+    margin: 0;
+    margin-bottom: 17px;
+    font-size: $font-size-sm;
+    line-height: $line-height-sm;
+    font-weight: 400;
+    letter-spacing: 1px;
+
+    @include md-down {
+      max-width: 273px;
+      letter-spacing: 0;
+      margin: 0 auto 20px;
+    }
+  }
+
+  &__link {
+    padding: 10px 15px;
+    margin-bottom: 20px;
+    width: 350px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    vertical-align: middle;
+    border-radius: 9px;
+    letter-spacing: 1px;
+
+    & > img {
+      margin-right: 15px;
+    }
+
+    @include md-down {
+      max-width: 280px;
+      margin: 0 auto 20px;
+      font-size: $font-size-sm;
+      line-height: 16.5px;
+      letter-spacing: 0.85px;
+      justify-content: space-between;
+    }
+  }
+
+  &__text {
+    font-family: $font-family-seconadry;
+    font-style: italic;
+    font-size: $font-size-xs;
+    line-height: $line-height-xs;
+    color: $color-dark-m;
+
+    @include md-down {
+      margin: 0 auto;
+      max-width: 280px;
+      text-align: justify;
+    }
+  }
+}

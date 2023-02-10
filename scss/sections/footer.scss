@@ -1,0 +1,124 @@
+.footer {
+  background: url(assets/images/hero/noise_transparent@2X.png),
+  radial-gradient(100% 215.42% at 0% 0%, #5B483A 0%, #262425 100%), #211F20;
+  padding-top: 40px;
+
+  @include lg-down {
+    padding-top: 30px;
+  }
+  
+  &__inner {
+    display: grid;
+    grid-template-columns: 278px 302px 1fr;
+    column-gap: 160px;
+
+    @include lg-down {
+      justify-content: center;
+      grid-template-columns: 278px 302px;
+      column-gap: 60px;
+      row-gap: 60px;
+    }
+
+    @include md-down {
+      grid-template-columns: 300px;
+      grid-template-rows: 208px 222px 269px;
+      text-align: center;
+      row-gap: 40px;
+    }
+  }
+
+  &__questions {
+    display: grid;
+    padding-top: 16px;
+    grid-template-rows: 90px 32px 32px;
+    row-gap: 40px;
+
+    &-img {
+      width: 40px;
+      height: 32px;
+      margin-right: 20px;
+    }
+
+    @include lg-down {
+      grid-template-rows: none;
+      padding-top: 0;
+    }
+
+    @include md-down {
+      grid-template-rows: 64px 32px 32px;
+      row-gap: 40px;
+    }
+  }
+
+  &__adress {
+    display: grid;
+    padding-top: 16px;
+    grid-template-rows: 90px 43px 32px;
+    row-gap: 34px;
+
+    &-img {
+      width: 22px;
+      height: 32px;
+      margin-right: 20px;
+    }   
+
+    @include lg-down {
+      grid-template-rows: none;
+      padding-top: 0;
+    }
+
+    @include md-down {
+      grid-template-rows: 64px 43px 32px;
+      row-gap: 40px;
+    }
+  }
+
+  &__title {
+    color: $color-light-xl;
+    letter-spacing: 2px;
+
+    @include md-down {
+      max-width: 278px;
+      font-size: 25px;
+      line-height: 32.5px;
+      letter-spacing: 1.5px;
+      margin: 0 auto 40px;
+    }
+  }
+
+  &__link {
+    display: flex;
+    vertical-align: middle;
+    align-items: center;
+
+    & > h4 {
+      font-weight: 400;
+      letter-spacing: 1px;
+      color: $color-primary;
+    }
+
+    @include md-down {
+      justify-content: center;
+    }
+  }
+
+  &__adress > .footer__link {
+    @include md-down {
+      justify-content: start;
+      text-align: left;
+    }
+  }
+
+  &__img {
+    @include lg-down {
+      grid-column: 1/3;
+      justify-self: center;
+    }
+
+    @include md-down {
+      grid-column: 1/2;
+      grid-row: 3/4;
+      max-width: 260px;
+    }
+  }
+}
